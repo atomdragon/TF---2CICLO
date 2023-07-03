@@ -124,6 +124,7 @@
     <ClCompile Include="FormPreguntaMath.cpp" />
     <ClCompile Include="Menu_Principal.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyForm02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constructor.h" />
@@ -131,6 +132,7 @@
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Entidad.h" />
     <ClInclude Include="File.h" />
+    <ClInclude Include="File02.h" />
     <ClInclude Include="FormPreguntaMath.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -140,12 +142,18 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyForm02.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Paredes.h" />
     <ClInclude Include="Vacuna.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm02.resx">
+      <DependentUpon>MyForm02.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

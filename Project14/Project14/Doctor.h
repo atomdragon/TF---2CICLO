@@ -19,7 +19,7 @@ public:
 		y = 570;
 		Dx = Dy = 15;
 		idx = idy = 0;
-		vidas =  3;
+		vidas = rand() % 10 + 5;
 		inicioX = x;
 		inicioY = y;
 

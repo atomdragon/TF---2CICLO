@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class File
+class File02
 {
 private:
 
@@ -19,19 +19,19 @@ private:
 
 
 public:
-	File() {}
-	~File() {}
+	File02() {}
+	~File02() {}
 
 
 	void Cargar_Datos() {
 
-		fileRead.open("Position.txt", ios::in);
+		fileRead.open("Position_nivel02.txt", ios::in);
 
 		if (fileRead.fail())
 		{
 			fileRead.close();
 
-			fileWrite.open("Position.txt", ios::out);
+			fileWrite.open("Position_nivel02.txt", ios::out);
 			fileWrite << "30" << endl;
 			fileWrite << "100" << endl;
 			fileWrite << "30" << endl;
@@ -68,7 +68,7 @@ public:
 			fileWrite << "200" << endl;
 			fileWrite.close();
 
-			fileRead.open("Position.txt", ios::in);
+			fileRead.open("Position_nivel02.txt", ios::in);
 
 
 

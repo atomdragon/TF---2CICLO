@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+#include "iostream"
 #include "string"
 
 namespace Project14 {
@@ -107,6 +107,7 @@ namespace Project14 {
 			// FormPreguntaMath
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(282, 253);
 			this->Controls->Add(this->btnrespuesta);
 			this->Controls->Add(this->txbrespuesta);
@@ -123,8 +124,8 @@ namespace Project14 {
 		}
 		void pregunta_matematica(int n)
 		{
-			double n1 = rand() % 50;
-			double n2 = rand() % 50;
+			double n1 = rand() % 10;
+			double n2 = rand() % 10;
 			int aux1;
 			String^ aux;
 			double aux2;

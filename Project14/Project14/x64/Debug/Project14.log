@@ -1,17 +1,17 @@
 ﻿  Menu_Principal.cpp
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(19,54): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(19,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(24,70): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(24,58): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\FormPreguntaMath.h(128,8): warning C4101: 'aux1': variable local sin referencia
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\FormPreguntaMath.h(166,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(19,54): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(19,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(24,70): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(24,58): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\FormPreguntaMath.h(129,8): warning C4101: 'aux1': variable local sin referencia
+C:\Users\juanm\source\repos\Project14\Project14\FormPreguntaMath.h(167,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   MyForm.cpp
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(19,54): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(19,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(24,70): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\Entidad.h(24,58): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\FormPreguntaMath.h(128,8): warning C4101: 'aux1': variable local sin referencia
-C:\Users\veron\Downloads\TF-14\Project14\Project14\Project14\FormPreguntaMath.h(166,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(19,54): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(19,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(24,70): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\Entidad.h(24,58): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\juanm\source\repos\Project14\Project14\FormPreguntaMath.h(129,8): warning C4101: 'aux1': variable local sin referencia
+C:\Users\juanm\source\repos\Project14\Project14\FormPreguntaMath.h(167,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   Generando código...
   FormPreguntaMath.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-  Project14.vcxproj -> C:\Users\veron\Downloads\TF-14\Project14\Project14\x64\Debug\Project14.exe
+  Project14.vcxproj -> C:\Users\juanm\source\repos\Project14\x64\Debug\Project14.exe

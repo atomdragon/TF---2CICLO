@@ -1,5 +1,6 @@
 #pragma once
 #include "MyForm.h"
+#include "MyForm02.h"
 
 namespace Project14 {
 
@@ -17,6 +18,8 @@ namespace Project14 {
 	{
 	private:
 		MyForm^ ControllerForm1 = gcnew MyForm();
+		MyForm02^ ControllerFormn2 = gcnew MyForm02();
+
 	public:
 		Menu_Principal(void)
 		{
@@ -213,10 +216,11 @@ namespace Project14 {
 	}
 	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+		   //Nivel 2
 	private: System::Void btn_Nivel_2_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (ControllerForm1 == nullptr || ControllerForm1->IsDisposed)
 		{
-			MyForm^ ControllerForm1 = gcnew MyForm();
+			MyForm02^ ControllerFormn2 = gcnew MyForm02();
 			Hide();
 			ControllerForm1->ShowDialog();
 			ControllerForm1->Close();
@@ -230,5 +234,5 @@ namespace Project14 {
 			Show();
 		}
 	}
-};
+	};
 }

@@ -1,4 +1,5 @@
   Project14.Menu_Principal.resources - Embedded, ContainedInManifestFile, 
+  Project14.MyForm02.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly Project14, Version=0.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -21,6 +22,9 @@ Class Project14.FormPreguntaMath: AutoLayout, AnsiClass, Class, Public, BeforeFi
     getCorrect_Incorrecto(): PrivateScope, Public, HideBySig
     setNivel(Int32): PrivateScope, Public, HideBySig
 Class Project14.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Project14.MyForm02: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class Project14.Menu_Principal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

@@ -2,9 +2,7 @@
 #include<ctime>
 #include"Constructor.h"
 #include "FormPreguntaMath.h"
-#include "File.h"
-
-
+#include "File02.h"
 
 namespace Project14 {
 
@@ -16,13 +14,13 @@ namespace Project14 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Resumen de MyForm
+	/// Resumen de MyForm02
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class MyForm02 : public System::Windows::Forms::Form
 	{
 	private:
 		int numEnemigos;
-	
+
 		Graphics^ g;
 		BufferedGraphicsContext^ espacio;
 		BufferedGraphics^ buffer;
@@ -36,15 +34,14 @@ namespace Project14 {
 		Bitmap^ bmpParedhorizontalalargada;
 		Bitmap^ bmpParedhorizontalalargada02;
 		Bitmap^ bmpfondo02;
-		File* file;
+		File02* file02;
 
 
 	private: System::Windows::Forms::Timer^ tmrMain;
 		   Constructor* constructor;
 	private: System::Windows::Forms::Label^ lblvidas;
-
 	public:
-		MyForm(void)
+		MyForm02(void)
 		{
 			srand((unsigned int)time(NULL));
 			InitializeComponent();
@@ -61,29 +58,26 @@ namespace Project14 {
 			bmpParedalargada = gcnew Bitmap("Paredes_Alargadas_02.png");
 			bmpParedhorizontalalargada = gcnew Bitmap("Paredes_Horizontales_Alargadas.png");
 			bmpParedhorizontalalargada02 = gcnew Bitmap("Paredes_Horizontales_Alargadas_02.png");
-			file = new File();
-			file->Cargar_Datos();
-			
+			file02 = new File02();
+			file02->Cargar_Datos();
 
 
-			constructor = new Constructor(bmpdoctor, bmpvacuna, bmpPared, bmpParedhorizontal, bmpParedalargada,bmpParedhorizontalalargada, bmpParedhorizontalalargada02, file->getX1(), file->getY1(), file->getX2(), file->getY2(), file->getX3(), file->getY3(), file->getX4(), file->getY4(), file->getX5(), file->getY5(), file->getX6(), file->getY6(), file->getX7(), file->getY7(), file->getX8(), file->getY8(), file->getX9(), file->getY9(), file->getX10(), file->getY10(), file->getX11(), file->getY11(), file->getX12(), file->getY12(), file->getX13(), file->getY13(), file->getX14(), file->getY14(), file->getX15(), file->getY15(), file->getX16(), file->getY16(), file->getX17(), file->getY17());
-			//
-			//TODO: agregar código de constructor aquí
-			//
+
+			constructor = new Constructor(bmpdoctor, bmpvacuna, bmpPared, bmpParedhorizontal, bmpParedalargada, bmpParedhorizontalalargada, bmpParedhorizontalalargada02, file02->getX1(), file02->getY1(), file02->getX2(), file02->getY2(), file02->getX3(), file02->getY3(), file02->getX4(), file02->getY4(), file02->getX5(), file02->getY5(), file02->getX6(), file02->getY6(), file02->getX7(), file02->getY7(), file02->getX8(), file02->getY8(), file02->getX9(), file02->getY9(), file02->getX10(), file02->getY10(), file02->getX11(), file02->getY11(), file02->getX12(), file02->getY12(), file02->getX13(), file02->getY13(), file02->getX14(), file02->getY14(), file02->getX15(), file02->getY15(), file02->getX16(), file02->getY16(), file02->getX17(), file02->getY17());
 		}
-
 
 	protected:
 		/// <summary>
 		/// Limpiar los recursos que se estén usando.
 		/// </summary>
-		~MyForm()
+		~MyForm02()
 		{
 			if (components)
 			{
 				delete components;
 			}
 		}
+
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -95,9 +89,9 @@ namespace Project14 {
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
-		/// </summary>
+/// Método necesario para admitir el Diseñador. No se puede modificar
+/// el contenido de este método con el editor de código.
+/// </summary>
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
@@ -125,7 +119,7 @@ namespace Project14 {
 			// tmrMain
 			// 
 			this->tmrMain->Enabled = true;
-			this->tmrMain->Tick += gcnew System::EventHandler(this, &MyForm::tmrMain_Tick);
+			this->tmrMain->Tick += gcnew System::EventHandler(this, &MyForm02::tmrMain_Tick);
 			// 
 			// MyForm
 			// 
@@ -134,13 +128,11 @@ namespace Project14 {
 			this->ClientSize = System::Drawing::Size(767, 642);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
-			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::MyForm_KeyDown);
+			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm02::MyForm_KeyDown);
 			this->ResumeLayout(false);
-
-
 		}
 #pragma endregion
-	private: System::Void MyForm_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+			private: System::Void MyForm_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
 		switch (e->KeyCode) {
 		case Keys::T: {
 			Enemigo* en = new Enemigo(bmpenemigo->Width / 4, bmpenemigo->Height / 4, 230, 250, 2);
@@ -219,9 +211,7 @@ namespace Project14 {
 			this->tmrMain->Enabled = false;
 			MessageBox::Show("PERDISTE");
 		}
-	
-
-
 	}
+	
 	};
 }

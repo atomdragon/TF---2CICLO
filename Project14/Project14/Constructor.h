@@ -26,7 +26,7 @@ private:
 
 public:
 	Constructor(Bitmap^ bmpdoctor, Bitmap^ bmpvacuna, Bitmap^ bmpPared, Bitmap^ bmpParedhorizontal, Bitmap^ bmpParedalargada, Bitmap^ bmpParedhorizontalalargada, Bitmap^ bmpParedhorizontalalargada02, int posiX1, int posiY1, int posiX2, int posiY2, int posiX3, int posiY3, int posiX4, int posiY4, int posiX5, int posiY5, int posiX6, int posiY6, int posiX7, int posiY7, int posiX8, int posiY8, int posiX9, int posiY9, int posiX10, int posiY10, int posiX11, int posiY11, int posiX12, int posiY12, int posiX13, int posiY13, int posiX14, int posiY14, int posiX15, int posiY15, int posiX16, int posiY16, int posiX17, int posiY17) : ArrEnemigos() {
-		nvacunas = rand() % 5 + 10;
+		nvacunas = rand() % 15 + 10;
 		doctor = new Doctor(bmpdoctor->Width / 4, bmpdoctor->Height / 4);
 		for (int i = 0; i < nvacunas; ++i) {
 			ArrVacunas.push_back(new Vacuna(bmpvacuna->Width / 4, bmpvacuna->Height));
@@ -143,7 +143,7 @@ public:
 
 
 	}
-	
+
 
 	void colision_elementos(Graphics^ g) {
 
@@ -284,6 +284,8 @@ public:
 	}
 
 
+
+
 	void imprimirCantVacunas(Graphics^ g) {
 		g->DrawString("Cantidad de vacunas: " + nvacunas.ToString(), gcnew Font("Arial", 20), Brushes::White, 100, 0);
 	}
@@ -326,10 +328,6 @@ public:
 	}
 	void Doc_menos_vida() {
 		doctor->quitar_Vidas();
-	}
-
-	int get_nvacunas() {
-		return nvacunas;
 	}
 
 
